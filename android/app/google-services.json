@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "879200252826",
+    "firebase_url": "https://lendsapp.firebaseio.com",
+    "project_id": "lendsapp",
+    "storage_bucket": "lendsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879200252826:android:4d1c3f36f477925cf34023",
+        "android_client_info": {
+          "package_name": "br.com.docdev.lendsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879200252826-bqkidqp0d072fm1ldt39jo06vejmlmgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcPLtDvG0efjbDAaBnZl8VenKXKdKrJCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879200252826-bqkidqp0d072fm1ldt39jo06vejmlmgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
