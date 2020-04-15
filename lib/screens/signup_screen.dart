@@ -11,6 +11,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
   final _passController = TextEditingController();
+  final _rePassController = TextEditingController();
   final _addressController = TextEditingController();
 
   final _formKey = GlobalKey<FormState>();
@@ -66,6 +67,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     validator: (text){
                       if(text.isEmpty || text.length < 6) return "Senha inválida";
                     },
+                  ),
+                  SizedBox(
+                    height: 16.0,
+                  ),
+                  TextFormField(
+                    controller: _rePassController,
+                    decoration: InputDecoration(hintText: "Repita sua senha"),
+                    obscureText: true,
+                    validator: (text){
+                      if(text.isEmpty || text.length < 6) return "Senha inválida";
+                      else if (text != _passController.text) {
+                        return "Senhas não coincidem";
+                      };
+                    }
                   ),
                   SizedBox(
                     height: 16.0,

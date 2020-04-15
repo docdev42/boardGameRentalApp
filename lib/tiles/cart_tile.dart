@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:lendsapp/datas/cart_game.dart';
 import 'package:lendsapp/datas/game_data.dart';
 import 'package:lendsapp/models/cart_model.dart';
+import 'package:lendsapp/screens/game_screen.dart';
 
 class CartTile extends StatelessWidget {
 
@@ -24,10 +25,17 @@ class CartTile extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8.0),
             width: 120.0,
-            child: Image.network(
-              cartGame.gameData.images[0],
-              fit: BoxFit.cover,
-            ),
+            child: GestureDetector(
+              child: Image.network(
+                cartGame.gameData.images[0],
+                fit: BoxFit.cover,
+              ),
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => GameScreen(cartGame.gameData))
+                );
+              },
+            )
           ),
           Expanded(
             child: Container(

@@ -14,7 +14,7 @@ class ShipCard extends StatelessWidget {
               color: Colors.grey[700]
           ),
         ),
-        leading: Icon(Icons.card_giftcard),
+        leading: Icon(Icons.local_shipping),
         children: <Widget>[
           Padding(
             padding: EdgeInsets.all(8.0),

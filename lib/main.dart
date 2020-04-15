@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             child: MaterialApp(
                 title: 'Lends App',
                 theme: ThemeData(
-                  primarySwatch: Colors.blue,
+                  primarySwatch: Colors.amber,
                   primaryColor: Color.fromARGB(255, 242, 87, 77),
                 ),
                 debugShowCheckedModeBanner: false,
